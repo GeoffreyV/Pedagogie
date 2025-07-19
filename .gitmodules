@@ -1,5 +1,5 @@
 [submodule "UPSTI"]
-	path = UPSTI
+	path = utils/UPSTI
 	url = git@github.com:GeoffreyV/UPSTI.git
 [submodule "Informatique"]
 	path = Informatique
