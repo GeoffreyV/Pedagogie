@@ -22,10 +22,16 @@
 \newlist{todolist}{itemize}{2}
 \setlist[todolist]{label=$\square$}
 
+\edef\stydir{\currfiledir}
+\typeout{Chemin absolu du fichier courant : \stydir}
+\edef\logodir{\stydir ../../../../Pedagogie/utils_IUT/logos/}
+\newcommand{\UPSTIcheminImages}{\logodir}
+\typeout{Chemin des images : \UPSTIcheminImages}
 
 \typeout{Chemin du fichier images : \UPSTIcheminImages}
-\renewcommand{\UPSTIlogoAuteur}{\UPSTIcheminImages logoAuteur.eps}
-\renewcommand{\UPSTIlogoLycee}{\UPSTIcheminImages logo_IUT_Annecy_CMJN.jpg}
+\newcommand{\UPSTIlogoAuteur}{\UPSTIcheminImages logoAuteur.eps}
+\newcommand{\UPSTIlogoLycee}{\UPSTIcheminImages logo_IUT_Annecy_CMJN.jpg}
+\newcommand{\UPSTIlogoLicence}{\UPSTIcheminImages logoLicence.png}
 \renewcommand{\UPSTIheaderLeft}{BUT}
 \renewcommand{\UPSTIenTetePrincipalFiliere}{Bachelor Universitaire Technologique}
 \renewcommand{\UPSTIcoordonneesLycee}{IUT d'Annecy, 9 rue de l’Arc en Ciel, 74940 Annecy}
